@@ -1,0 +1,81 @@
+---
+title: "`r icon::fa_cubes()` Visualising high-dimensional spaces with application to particle physics models"
+author: "<br><br> Di Cook <br><br> Monash University"
+date: "[bit.ly/IMS-Singapore](bit.ly/IMS-Singapore)  <br><br>  <br><br>Feb 13, 2018"
+output:
+  xaringan::moon_reader:
+    css: ["default", "myremark.css"]
+    self_contained: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+class: inverse middle center
+
+```{r initial, echo = FALSE, cache = FALSE, warning = FALSE, message = FALSE, error=FALSE, results = 'hide'}
+library(knitr)
+options(htmltools.dir.version = FALSE, tibble.width = 60)
+opts_chunk$set(
+  echo = FALSE, warning = FALSE, message = FALSE, error=FALSE, comment = "#>",
+  fig.path = 'figure/', cache.path = 'cache/', fig.align = 'center', 
+  fig.width = 12, fig.height = 11, fig.show = 'hold', 
+  cache = TRUE, external = TRUE, dev = 'svglite'
+)
+library(tidyverse)
+library(ochRe)
+```
+
+class: middle
+
+# Outline
+
+- Visualisation of high-dimensions using tours: the tourr package
+- A library of high-dimensional shapes: the geozoo package
+- Model in the data-space vs data in the model-space
+
+---
+
+
+# My reasons
+
+.medium[It is also better from a statistics perspective. The grammar of graphics provides a tight connection between data and statistics, in order to do inference with data plots.]
+
+
+---
+
+class: inverse 
+
+# Joint work!
+
+- Inference: Andreas Buja, Heike Hofmann, Mahbub Majumder, Hadley Wickham, Eric Hare, Susan Vanderplas, Niladri Roy Chowdhury, Nat Tomasetti.
+- Interactive graphics: Debby Swayne, Andreas Buja, Duncan Temple Lang, Heike Hofmann, Michael Lawrence, Hadley Wickham, Yihui Xie, Xiaoyue Cheng.
+
+Contact: [`r icon::fa_envelope()`](http://www.dicook.org) dicook@monash.edu, [`r icon::fa_twitter()`](https://twitter.com/visnut) visnut, [`r icon::fa_github()`](https://github.com/dicook) dicook
+
+.footnote[Slides made with Rmarkdown, xaringan package by Yihui Xie, and lorikeet theme using the [ochRe package](https://github.com/ropenscilabs/ochRe). Available at [github.com/dicook/RStudio-keynote](github.com/dicook/RStudio-keynote].)
+
+---
+# Further reading
+
+- Inference
+    - Buja et al (2009) Statistical Inference for Exploratory Data Analysis and Model Diagnostics, Roy. Soc. Ph. Tr., A
+    - Majumder et al (2013) Validation of Visual Statistical Inference, Applied to Linear Models, JASA
+    - Wickham et al (2010) Graphical Inference for Infovis, InfoVis, Best paper
+    - Hofmann et al (2012) Graphical Tests for Power Comparison of Competing Design, InfoVis
+    
+---
+
+- Interactive graphics
+    - Buja et al (1987) Elements of a Viewing Data Pipeline for Data Analysis and  [Dataviewer](http://stat-graphics.org/movies/dataviewer.html)
+    - Cook and Swayne (2007) [Interactive and Dynamic Graphics for Data Analysis](ggobi.org)
+    - Wickham et al (2009?) [The plumbing of interactive graphics
+](http://vita.had.co.nz/papers/plumbing.pdf)
+    - Xie et al (2014) Reactive Programming for Interactive Graphics, Statistical Science
+
+---
+class: middle center
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
