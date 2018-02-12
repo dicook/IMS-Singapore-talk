@@ -1,7 +1,7 @@
 ---
 title: "`r icon::fa_cubes()` Visualising high-dimensional spaces with application to particle physics models"
 author: "<br><br> Di Cook <br><br> Monash University"
-date: "[bit.ly/IMS-Singapore](bit.ly/IMS-Singapore)  <br><br>  <br><br>Feb 13, 2018"
+date: "[bit.ly/IMS-Singapore-Cook](bit.ly/IMS-Singapore-Cook)  <br><br>  <br><br>Feb 13, 2018"
 output:
   xaringan::moon_reader:
     css: ["default", "myremark.css"]
