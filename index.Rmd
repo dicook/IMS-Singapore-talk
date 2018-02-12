@@ -37,7 +37,7 @@ class: middle
 - Model in the data-space vs data in the model-space
 - Physics data visualisation
 
-.footnote[`r icon::fa_creative_commons()`]
+
 ---
 
 .left-column[
@@ -48,7 +48,7 @@ class: middle
 A .red[grand tour] is by definition a movie of low-dimensional projections constructed in such a way that it comes arbitrarily close to any low-dimensional projection; in other words, a grand tour is a space-filling curve in the manifold of low-dimensional projections of high-dimensional data spaces.
 ]
 
-.footnote[`r icon::fa_creative_commons()`]
+
 ---
 
 .left-column[
@@ -75,7 +75,7 @@ A .red[grand tour] is by definition a movie of low-dimensional projections const
 - The animation of the projected data is given by a path ${\mathbf y}_i(t)=F'(t){\mathbf x}_i$.
 ]
 
-.footnote[`r icon::fa_creative_commons()`]
+
 ---
 
 .left-column[
@@ -95,7 +95,7 @@ A .red[grand tour] is by definition a movie of low-dimensional projections const
 - Set $F_a=F_z$, start again
 ]
 
-.footnote[`r icon::fa_creative_commons()`]
+
 ---
 
 .left-column[
@@ -114,7 +114,7 @@ $$G_a=F_aV_a~~~,~~~ G_z=F_zV_z$$.
 
 ]
 
-.footnote[`r icon::fa_creative_commons()`]
+
 ---
 
 .left-column[
@@ -133,7 +133,7 @@ $$G_a=F_aV_a~~~,~~~ G_z=F_zV_z$$.
 - *Manual:* Control the contribution of a single variable, and move along this axis  
 ]
 
-.footnote[`r icon::fa_creative_commons()`]
+
 ---
 
 .left-column[
@@ -153,7 +153,7 @@ $W=\sum_{i=1}^g\sum_{j=1}^{n_i}({\mathbf y}_{ij}-\bar{{\mathbf y}}_{i.})({\mathb
 - *PDA:* finds separations between classes, when there are many variables and few points $I(F, \lambda) = 1-\frac{|F'((1-\lambda)W+n\lambda I_p)F|}{|F'((1-\lambda)(B+W)+n\lambda I_p)F|}$
 ]
 
-.footnote[`r icon::fa_creative_commons()`]
+
 ---
 
 .left-column[
@@ -173,7 +173,7 @@ $W=\sum_{i=1}^g\sum_{j=1}^{n_i}({\mathbf y}_{ij}-\bar{{\mathbf y}}_{i.})({\mathb
 - possible to generate a path and play it back
 ]
 
-.footnote[`r icon::fa_creative_commons()`]
+
 ---
 
 .pull-left[
@@ -243,7 +243,7 @@ animate(s3_tp,
 ```
 ]
 
-.footnote[`r icon::fa_creative_commons()`]
+
 ---
 # Tourr package
 
@@ -263,7 +263,7 @@ animate_stars(flea[sort(sample(1:74, 16)), 1:6], grand_tour(5))
 
 <iframe src="https://player.vimeo.com/video/255466661" width="300" height="290" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-.footnote[`r icon::fa_creative_commons()`]
+
 ---
 
 .pull-left[
@@ -290,7 +290,7 @@ animate_xy(flea[, 1:6],
 ```
 ]
 
-.footnote[`r icon::fa_creative_commons()`]
+
 ---
 
 .left-column[
@@ -304,7 +304,7 @@ The `geozoo` package is a library of high-dimensional shapes, and code to genera
 Web site: [http://schloerke.com/geozoo/all/](http://schloerke.com/geozoo/all/)
 ]
 
-.footnote[`r icon::fa_creative_commons()`]
+
 ---
 
 .left-column[
@@ -338,7 +338,7 @@ animate(c5_face$points, grand_tour(),
 
 ]
 
-.footnote[`r icon::fa_creative_commons()`]
+
 ---
 
 .left-column[
@@ -367,7 +367,7 @@ animate(s4s$points, grand_tour(),
 <img src="img/sphere_h.png" width="200px">
 <img src="img/sphere_s.png" width="200px">
 ]
-.footnote[`r icon::fa_creative_commons()`]
+
 ---
 
 .left-column[
@@ -398,7 +398,7 @@ animate(sp5$points, grand_tour(),
 <img src="img/simplex3.png" width="200px">
 <img src="img/simplex5.png" width="200px">
 ]
-.footnote[`r icon::fa_creative_commons()`]
+
 ---
 
 .left-column[
@@ -441,7 +441,7 @@ animate(votes[,-4], grand_tour(),
 <img src="img/votes.png" width="400px">
 ]
 
-.footnote[`r icon::fa_creative_commons()`]
+
 ---
 
 class: inverse middle center
@@ -461,7 +461,7 @@ colnames(k4$points) <- paste0("V",1:4)
 animate_xy(k4$points, axes="bottomleft")
 ```
 
-.footnote[`r icon::fa_creative_commons()`]
+
 ---
 .left-column[
 # Library
@@ -481,7 +481,7 @@ ${\mathbf x}_i\sim N_p(0,I_p)$,
 $\frac{{\mathbf x}_i}{||{\mathbf x}_i||}$
 ]
 
-.footnote[`r icon::fa_creative_commons()` Schloerke et al (2016) "Escape from Boxland" The R Journal]
+.footnote[Schloerke et al (2016) "Escape from Boxland" The R Journal]
 ---
 # Model in the data space
 
@@ -489,7 +489,7 @@ $\frac{{\mathbf x}_i}{||{\mathbf x}_i||}$
 - By displaying the model in the high-d data space, rather than low-d
 summaries of the data produced by the model, we expect to better understand the fit.
 
-.footnote[`r icon::fa_creative_commons()` Wickham et al (2015) Visualizing statistical models: Removing the blindfold, SAM]
+.footnote[Wickham et al (2015) Visualizing statistical models: Removing the blindfold, SAM]
 
 ---
 # Hierarchical clustering
@@ -503,7 +503,7 @@ plot(hclust(dist(rescaler(flea[,-7])), method="single"), hang=-1)
 plot(hclust(dist(rescaler(flea[,-7])), method="ward.D2"), hang=-1)
 ```
 
-.footnote[`r icon::fa_creative_commons()`]
+
 ---
 # Hierarchical clustering
 
@@ -533,7 +533,7 @@ animate(flea_hc$data[, 1:6], planned_tour(t1),
 
 <iframe src="https://player.vimeo.com/video/255344258" width="320" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-.footnote[`r icon::fa_creative_commons()`]
+
 ---
 # Multidimensional physics
 
@@ -542,7 +542,7 @@ animate(flea_hc$data[, 1:6], planned_tour(t1),
 - The average theorist resorts to dropping all but 1 or 2 parameters (variables)
 - Potentially misses multivariate associations and differences
 
-.footnote[`r icon::fa_creative_commons()`]
+
 ---
 
 # Higgs boson
@@ -552,7 +552,7 @@ animate(flea_hc$data[, 1:6], planned_tour(t1),
 
 <img src="img/higgs.png" width="800px">
 
-.footnote[`r icon::fa_creative_commons()`]
+
 ---
 
 # How dark matter interacts
@@ -583,7 +583,7 @@ ggplot(aes(x=c(1,1,1), y=c(0.5,0.6,0.7), label=lsp, colour=lsp)) + geom_text(siz
 ```
 ]
 
-.footnote[`r icon::fa_creative_commons()`]
+
 ---
 # Scagnostics shape differences
 
@@ -591,7 +591,7 @@ ggplot(aes(x=c(1,1,1), y=c(0.5,0.6,0.7), label=lsp, colour=lsp)) + geom_text(siz
 - Describe shapes of scatterplots: Outlying, Skewed, Clumpy, Sparse, Striated, Convex, Skinny, Stringy, Monotonic. 
 - Designed to find most interesting pairs of variables in high-dimensional data
 
-.footnote[`r icon::fa_creative_commons()`]
+
 ---
 
 ```{r echo=FALSE, fig.align=8, fig.height=8}
@@ -603,7 +603,7 @@ sc_m <- as.data.frame(unclass(sc_m))
 library(GGally)
 ggpairs(sc_m) + theme(aspect.ratio=1)
 ```
-.footnote[`r icon::fa_creative_commons()`]
+
 ---
 
 ```{r echo=FALSE, fig.show='hold'}
@@ -623,13 +623,13 @@ p3 <- ggplot(mtcars, aes(x=mpg, y=carb)) +
 grid.arrange(p1, p2, p3, ncol=3)
 ```
 
-.footnote[`r icon::fa_creative_commons()`]
+
 ---
 # Discreteness of scagnostics
 
 <img src="img/scagnostics.png" width="800px">
 
-.footnote[`r icon::fa_creative_commons()`]
+
 ---
 # Summary
 
@@ -638,7 +638,7 @@ grid.arrange(p1, p2, p3, ncol=3)
 - Think about ways to look at the model in the data space
 - .red[Challenge: new ideas for defining shape differences]
 
-.footnote[`r icon::fa_creative_commons()`]
+
 ---
 
 class: inverse 
@@ -653,7 +653,7 @@ Contact: [`r icon::fa_envelope()`](http://www.dicook.org) dicook@monash.edu, [`r
 
 <img src="img/lorikeets.png" width="200px">
 
-.footnote[`r icon::fa_creative_commons()` Slides made with Rmarkdown, xaringan package by Yihui Xie, and lorikeet theme using the [ochRe package](https://github.com/ropenscilabs/ochRe). Available at [https://github.com/dicook/IMS-Singapore-talk](https://github.com/dicook/IMS-Singapore-talk].)
+.footnote[Slides made with Rmarkdown, xaringan package by Yihui Xie, and lorikeet theme using the [ochRe package](https://github.com/ropenscilabs/ochRe). Available at [https://github.com/dicook/IMS-Singapore-talk](https://github.com/dicook/IMS-Singapore-talk].)
 
 ---
 # Further reading
@@ -665,7 +665,7 @@ Contact: [`r icon::fa_envelope()`](http://www.dicook.org) dicook@monash.edu, [`r
 - Schloerke, et al (2016) [Escape from Boxland](https://journal.r-project.org/archive/2016/RJ-2016-044/ index.html)
 
 
-.footnote[`r icon::fa_creative_commons()`]
+
 ---
 class: middle center
 
