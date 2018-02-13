@@ -412,8 +412,8 @@ animate(sp5$points, grand_tour(),
 ]
 .right-column[
 ```{r eval=FALSE, echo=FALSE}
-library(randomForest)
 quartz()
+library(randomForest)
 data(olive)
 olive_sub <- olive %>% filter(region==1) %>%
   select(-region) %>% mutate(area=factor(area))
